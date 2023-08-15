@@ -13,7 +13,7 @@ Và trong phần FTP-Data quả nhiên có vài file đáng nghi vấn ở đây
 6. Tiếp đến kiểm tra *takemehome.jpg* xem có gì đặc biệt không, qua một loạt thử từ exiftool cho đến strings và cả binwalk thì chả thu được cái gì
 7. Cay quá nên tiếp tục chuyển sang file *timemachine.apk*, vẫn extract file ra bằng lệnh *binwalk -e timemachine.apk* thu được folder
 8. Dựa theo đề thì ông John này đang phạm tội và có vài thông tin kín được truyền đi thông qua app **Time machine** này (bởi đuôi của file này là .apk) mình kiểm tra các folder chứa tài nguyên trước, thường các folder này có tên là */res*, và khi vào folder này mình phát hiện ra phần Date có điểm kỳ lạ ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/4.png?raw=true)
-9. Các folder khác đều đã cũ từ tận 1981 và riêng có một folder mới được update gần đây 2023, nhấp chuột vào và "Ồ" thêm phát nữa, có duy nhất một file "strings.xml" cũng được update gần đây, tiếp cái đà sắp vớ được flag thì mình bất terminal lên và *$strings strings.xml*.
+9. Các folder khác đều đã cũ từ tận 1981 và riêng có một folder mới được update gần đây 2023, nhấp chuột vào và "Ồ" thêm phát nữa, có duy nhất một file "strings.xml" cũng được update gần đây, tiếp cái đà sắp vớ được flag thì mình bật terminal lên và *$strings strings.xml*.
    # VÀ ĐIỀU GÌ ĐẾN CŨNG PHẢI ĐẾN
 -    Here is your flaggg !
 ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/5.png?raw=true)
