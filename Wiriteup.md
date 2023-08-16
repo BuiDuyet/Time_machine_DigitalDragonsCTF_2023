@@ -10,7 +10,7 @@ Bùm, thấy một đoạn giao tiếp giữa John và server, đọc kỹ sẽ 
 4. Sau đó mình mở phần Export Object ra rồi check từng phần export xem có ra gì không ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/2.png?raw=true)
 Và trong phần FTP-Data quả nhiên có vài file đáng nghi vấn ở đây ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/3.png?raw=true)
 5. Mình Save all về và kiểm tra từng file một, mình kiểm tra file "secret.odt" trước vì thấy secret là đã thấy mùi nghi nghi rồi
-6. Mình extract file bằng lệnh *$binwalk -e secret.odt* sau khi kiểm tra và vào đường dẫn */secret/Thumbnails/* mình thấy có một file ảnh .png với nội dung **NOT Here lol**, biêt mình đã bị lừa nên mình tiếp tục soát các file còn lại
+6. Mình extract file bằng lệnh *$binwalk -e secret.odt* sau khi kiểm tra và vào đường dẫn */secret/Thumbnails/* mình thấy có một file ảnh .png với nội dung **NOT Here lol**, biết mình đã bị lừa nên mình tiếp tục soát các file còn lại
 7. Tiếp đến kiểm tra *takemehome.jpg* xem có gì đặc biệt không, qua một loạt thử từ exiftool cho đến strings và cả binwalk thì chả thu được cái gì
 8. Cay quá nên tiếp tục chuyển sang file *timemachine.apk*, vẫn extract file ra bằng lệnh *binwalk -e timemachine.apk* thu được folder
 9. Dựa theo đề thì ông John này đang phạm tội và có vài thông tin kín được truyền đi thông qua app **Time machine** này (bởi đuôi của file này là .apk) mình kiểm tra các folder chứa tài nguyên trước, thường các folder này có tên là */res*, và khi vào folder này mình phát hiện ra phần Date có điểm kỳ lạ ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/4.png?raw=true)
