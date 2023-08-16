@@ -6,7 +6,7 @@
 1. Đầu tiên mình thấy đuôi file là .pcapng nên đây là phần mở rộng của .pcap - tệp lưu trữ các gói tin trong mạng máy tính
 2. Mình mở Wireshark lên để phân tích, mình thử xem các luồng TCP xem có gì đặc biệt ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/6.png?raw=true)
  ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/1.png?raw=true)
-Bùm, thấy một đoạn giao tiếp giữa John và server, đọc kỹ sẽ thấy ông Jhon này đã gửi file gì đó đến server
+Bùm, thấy một đoạn giao tiếp giữa John và server, đọc kỹ sẽ thấy ông John này đã gửi file gì đó đến server
 4. Sau đó mình mở phần Export Object ra rồi check từng phần export xem có ra gì không ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/2.png?raw=true)
 Và trong phần FTP-Data quả nhiên có vài file đáng nghi vấn ở đây ![](https://github.com/BuiDuyet/Time_machine_DigitalDragonsCTF_2023/blob/main/3.png?raw=true)
 5. Mình Save all về và kiểm tra từng file một, mình kiểm tra file "secret.odt" trước vì thấy secret là đã thấy mùi nghi nghi rồi
